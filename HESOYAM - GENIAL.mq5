@@ -81,7 +81,7 @@ void OnDeinit(const int reason)
 //+------------------------------------------------------------------+
 void OnTick()
 {          
-   vExpediente = Expediente(11,00,11,40,TimeCurrent());
+   vExpediente = Expediente(09,00,09,40,TimeCurrent());
    vFechamento = Expediente(17,50,18,00,TimeCurrent());
    
    //--- Se os dados foram lidos corretamente
@@ -132,10 +132,10 @@ void OnTick()
    	//--- Recebe os dados dos indicadores
       }else
    	{
+         int basededadosdopreco = CopyRates(_Symbol,_Period,0,Bars(_Symbol,_Period),dadosdopreco);         
+               
          if (vExpediente)
          {
-            int basededadosdopreco = CopyRates(_Symbol,_Period,0,Bars(_Symbol,_Period),dadosdopreco);         
-            
             //--- Valida o spread
             if (((last_tick.bid - last_tick.ask) <= 20 && (last_tick.bid - last_tick.ask) >= 0) || 
                 ((last_tick.ask - last_tick.bid) <= 20 && (last_tick.ask - last_tick.bid) >= 0))

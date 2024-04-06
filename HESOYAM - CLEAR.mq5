@@ -3,7 +3,7 @@
 //|                                             Enan Gobi Rosa, 2024 |
 //+------------------------------------------------------------------+
 #property copyright "Enan Gobi Rosa"
-#property link      "HESOYAM Build: 02 - CLEAR"
+#property link      "HESOYAM Build: 01 - CLEAR"
 #property version   "HESOYAM 2.0"
 
 //+------------------------------------------------------------------+
